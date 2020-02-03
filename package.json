@@ -1,0 +1,26 @@
+{
+  "name": "fitness-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scheme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "edit": "node seeders/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucy13palmer7/fitness-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucy13palmer7/fitness-tracker/issues"
+  },
+  "homepage": "https://github.com/lucy13palmer7/fitness-tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
