@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const port = process.env.port || 3000;
+const port = process.env.port || 27017;
 const app = express();
 // Middleware
 app.use(
@@ -21,5 +21,5 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 app.use(require("./routes/routes"));
 
 app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
+  console.log(`http://localhost:${PORT}`);
 });
