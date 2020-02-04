@@ -134,7 +134,7 @@ let workoutSeed = [
     ]
   }
 ];
-
+// use "Workout" for Routes
 db.Workout.deleteMany({})
   .then(() => db.Workout.collection.insertMany(workoutSeed))
   .then(data => {
