@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-const port = process.env.port || 27017;
+const port = process.env.PORT || 27017;
 const app = express();
 // Middleware
 app.use(express.static("public"));
