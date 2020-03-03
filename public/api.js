@@ -4,7 +4,7 @@ const API = {
     try {
       res = await fetch("/api/workouts");
     } catch (err) {
-      console.log(err);
+      console.log(err)
     }
     const json = await res.json();
 
@@ -23,9 +23,10 @@ const API = {
 
     return json;
   },
-  async createWorkout() {
+  async createWorkout(data = {}) {
     const res = await fetch("/api/workouts", {
       method: "POST",
+      body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" }
     });
 
@@ -39,5 +40,5 @@ const API = {
     const json = await res.json();
 
     return json;
-  }
+  },
 };
